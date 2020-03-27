@@ -2,6 +2,9 @@
 This is a part of Graduation Proeject at Nile University.
 
 **Developers:**
-  [Dalia Zahran](https://github.com/DaliaZhran)
-  [Ehab Ibrahim](http://github.com/ehabibrahimh)
- 
+  - [Dalia Zahran](https://github.com/DaliaZhran)
+  - [Ehab Ibrahim](http://github.com/ehabibrahimh)  
+
+**Supervisors:**
+  - Dr Mohamed El Helw  
+  - [Eng Hisham Arafat Shehata](https://www.linkedin.com/in/hisham-arafat-a7a69230)  
