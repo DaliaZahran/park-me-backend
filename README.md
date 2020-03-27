@@ -6,5 +6,5 @@ This is a part of Graduation Proeject at Nile University.
   - [Ehab Ibrahim](http://github.com/ehabibrahimh)  
 
 **Supervisors:**
-  - Dr Mohamed El Helw  
+  - [Dr Mohamed El Helw](https://www.linkedin.com/in/mohamedelhelw/)  
   - [Eng Hisham Arafat Shehata](https://www.linkedin.com/in/hisham-arafat-a7a69230)  
