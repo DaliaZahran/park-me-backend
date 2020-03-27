@@ -16,6 +16,7 @@ This is a part of Graduation Proeject at Nile University.
     npx nodemon index.js 
 
 ### Prepare db (test case)
-Add the values you want in db first by running following commands in cmd:
-    - redis-cli
-    - set hi bye
+**Add the values you want in db first by running following commands in cmd:**
+
+  - redis-cli
+  - set hi bye
