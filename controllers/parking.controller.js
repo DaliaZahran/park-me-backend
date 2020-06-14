@@ -19,7 +19,7 @@ router.get("/info", async (req, res) => {
 
 router.post("/set-key", (req, res) => {
   let key = req.body.key;
-  client.get(key, function(error, result) {
+  client.get(key, function (error, result) {
     if (error) {
       console.log(error);
       res.status(503).send({ error: "DB Error:(" });
@@ -52,7 +52,7 @@ router.post("/set-key", (req, res) => {
 //   });
 // });
 
-router.get("/a", (req, res) => {
+router.get("/locations", (req, res) => {
   // var arr = [];
   // client.keys("*", function(e, keys) {
   //   if (e) {
@@ -72,18 +72,18 @@ router.get("/a", (req, res) => {
   //   });
   // });
 
-  client.keys("*", function(err, keys) {
+  client.keys("*001", function (err, keys) {
     if (err) return console.log(err);
     if (keys) {
       async.map(
         keys,
-        function(key, cb) {
-          client.hgetall(key, function(error, value) {
+        function (key, cb) {
+          client.hgetall(key, function (error, value) {
             if (error) return cb(error);
             cb(null, value);
           });
         },
-        function(error, results) {
+        function (error, results) {
           if (error) return console.log(error);
           res.json({ values: results });
         }
@@ -92,11 +92,27 @@ router.get("/a", (req, res) => {
   });
 });
 
-// const setClient = (inClient) => {
-//     client = inClient;
-// }
+router.get("/lots/:id", (req, res) => {
+  let urlSections = req.url.split("/");
+  id = urlSections[urlSections.length - 1].slice(0, 3);
+  client.keys(id + "*", function (err, keys) {
+    if (err) return console.log(err);
+    if (keys) {
+      async.map(
+        keys,
+        function (key, cb) {
+          client.hgetall(key, function (error, value) {
+            if (error) return cb(error);
+            cb(null, value);
+          });
+        },
+        function (error, results) {
+          if (error) return console.log(error);
+          res.json({ values: results });
+        }
+      );
+    }
+  });
+});
 
 module.exports = router;
-// module.exports = {
-//     router, setClient
-//    }
