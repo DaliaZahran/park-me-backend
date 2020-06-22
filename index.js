@@ -38,6 +38,7 @@ var parkings = [
     long: 30.9730808455763,
     lotNo: "1",
     status: "0",
+    price: "5",
     timestamp: "2020-06-13 07:59:49.139354",
   },
   {
@@ -49,6 +50,7 @@ var parkings = [
     long: 30.9730808455763,
     lotNo: "2",
     status: "1",
+    price: "5",
     timestamp: "2020-06-13 07:59:49.139354",
   },
   {
@@ -60,6 +62,7 @@ var parkings = [
     long: 30.9730808455763,
     lotNo: "3",
     status: "1",
+    price: "3",
     timestamp: "2020-06-13 07:59:49.139354",
   },
   {
@@ -71,6 +74,7 @@ var parkings = [
     long: 30.9719208212758,
     lotNo: "1",
     status: "0",
+    price: "4",
     timestamp: "2020-06-13 07:59:49.139354",
   },
 ];
